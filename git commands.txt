@@ -1,0 +1,80 @@
+Command to check if git is installed or not
+
+git --version (you can check either in cmd or powershell both works)
+
+
+command for Checking if we own the git or not
+git config --global --list
+
+making git your own by providing the username and the password
+git config --global user.name "name of the user"
+git config --global user.email "email id of the user"
+
+staging area : used to keep the track of the changes we made on the files.
+for each and every commit we will add it to statging area because when we make changes it changes in the working directory 
+not in the staging directory 
+
+creating empty repository when we use this command master we will be genetarted by it is not recommended to do so 
+git init 
+
+check the status
+git status
+
+creation for the main branch
+git init -b main   
+
+To check the numbers of commits are made
+git log
+
+how to make the commit we need to pass the message about what commits you have made in
+git commit -m "My First Commit"
+
+without moving into statging directory.
+ git commit -a -m "My Fourth Commit"
+ 
+To observe the difference 
+git diff 
+
+after moved to staged are 
+git diff --staged
+
+Suppose we have created two new files(i.e, credentils.txt and Readme,md) we need to move these into staged then
+the command is 
+git add .
+
+Github:
+To copy the source code from the Github use
+git clone paste the  github link 
+
+
+creting a ssh key command to type
+ssh-keygen -o
+
+pushing the data to gihub 
+git push origin main
+
+branch:if we want to implement a new feature to the existing feature where the changes does not effect the main branch then we will created
+the branch
+command to create the branch
+
+we can either use switch or checkout both serve the same purpose.
+
+git checkout -b name of the branch(eg. git checkout -b feature1)
+
+command to check numbers of branches are created
+git branch.
+
+using switch to create the branches
+git switch -c feature2
+
+using to display all the branches including the remote branch
+git branch --all
+
+Navigating to previous branch
+git switch -
+
+Delete the branch
+git branch -d branch name(i.e, git branch -d feature2)
+
+merge the branch with the main we should be in the main branch to perform this
+git merge branch (i.e, name of the branch)
